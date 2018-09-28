@@ -121,22 +121,16 @@ class Admin_model extends CI_Model {
         return $data;
     }
 
-    ////////////////////////////////////////
-    //  Inserting Models                 ///
-    ////////////////////////////////////////
 
-    public function insert_models()
+    public function addPart($data)
     {
-        $data=$this->db->query('SELECT distinct(model) from data')->result_array();
-        foreach($data as $row)
-        {
-            $item=array(           
-                'name'=>$row['model']
-            );
+        $this->db->insert('data', $data);
+        return true;
+    }
 
-            $this->db->insert('models',$item);
-        }
-        return 'Data Inserted'; 
+    public function delPart($id)
+    {
+        $this->db->query('DELETE from data WHERE id='.$id);
     }
 
 }

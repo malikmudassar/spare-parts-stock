@@ -1,7 +1,7 @@
 <div class="layout-footer">
     <div class="layout-footer-body">
         <small class="version">Version 1.0.0</small>
-        <small class="copyright">2016 &copy; ERP By <a href="http://smartbaba.ae/">SmartBABA</a></small>
+        <small class="copyright">2018 &copy; Application By <a href="">TechnologicX</a></small>
     </div>
 </div>
 </div>

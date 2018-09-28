@@ -64,7 +64,7 @@
                 closeOnConfirm: false }, function()
             {
                 swal("Deleted!", "Part has been Deleted.", "success");
-                $(location).attr('href','<?php echo base_url()?>parts/del/'+id);
+                $(location).attr('href','<?php echo base_url()?>parts/delete/'+id);
             }
         );
     }
