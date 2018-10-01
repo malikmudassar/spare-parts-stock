@@ -75,7 +75,7 @@ define('ENVIRONMENT','development');
 //         define('ENVIRONMENT','development');
 //     break;
 // }
-
+define('BASE_URL','http://'.$_SERVER['SERVER_NAME'].'/parts/';);
 switch (ENVIRONMENT)
 {
 	case 'development':
